@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.moon{
+    position: absolute;
+    z-index: -999;
+    width: 350px;
+    height: 350px;
+    left: 45%;
+    top: 20%;
+    transform: rotate(240deg);
+}
+.moon path{
+    fill: #EBDC52;
+}
+.primary-header{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.moon-title{
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-size:50px;
+}
+.quote-title{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+}
+.fa-moon{
+    position: absolute;
+    left: 47.3%;
+    top: 13.5%;
+
+    width: 60px;
+    height: 60px;
+}
+.fa-location-dot{
+    position: absolute;
+    left: 58%;
+    top: 27.10%;
+
+    width: 18px;
+    height: 18px;
+}
+/* log in container
+    username
+    password */
+.login-container{
+    margin-top: 1.5rem;
+}
+form{
+    font-size: 20px;
+    
+}
+form>input{
+    margin: 6px 0;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-weight: 300;
+    font-size: 15px;
+    line-height:30px ;
+}
+#user-name,
+#pass-word{
+    z-index: 999;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+}
+/* button container */
+.login-btn-container{
+    margin-top: 0.5rem;
+}
+.login-btn{
+    margin: 6px auto;
+    width: 315px;
+}
+.login-btn:hover{
+    color: #000;
+}
+.signup-btn{
+    margin: 6px auto;
+    width: 290px;
+    font-family: 'Roboto', sans-serif;
+}
+.sign-up a{
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+.log-in, .sign-up{
+    border: none;
+    border-radius: 15px;
+    padding: 11px;
+
+    background-color: #ffffff;
+    color: #E8E02B;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    margin-top: 17px;
+    font-weight: 300px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+.forgot-password a,
+.create-new-acc a,
+p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+p a:hover{
+    color: #E8E02B;
+}
+.line{
+    border-bottom: 1px solid #ffffff;
+    width: 20%;
+}
+
+@media screen and (max-width:840px) {
+    form>input{
+        width: 250px;
+    }
+    .login-btn,.signup-btn{
+        width: 250px;
+    }
+    .sign-up a{
+        font-size: 15px;
+    }
+    .moon{
+        width: 310px;
+        height: 310px;
+        top: -19%;
+        left: -1%;
+        transform: rotate(70deg);
+    }
+    .fa-moon {
+        left: 38%;
+        top: 15.5%;
+    }
+    .fa-location-dot {
+        left: 82%;
+        top: 31%;
+    }
+    .line{
+        width: 50%;
+    }
+}
+
